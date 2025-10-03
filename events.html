@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/events.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+            <img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
+            Ilorin Golf Club
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-dark fw-semibold" href="index.html">Home</a>
+            </li></li>
+            <li class="nav-item">
+                <a class="nav-link active fw-semibold" href="course.html">The Course</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active fw-semibold" href="club.html" >The Club</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="events.html" style="color: #D4AF37; background: transparent;">Events</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="membership.html">Membership</a></li>
+            </ul>
+            <div class="d-lg-none d-block">
+                <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;">Book a Tee Time</a>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+            <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;"> Book a Tee Time</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">        
+        <img src="assets/thecourse-bg.png" 
+        alt="Golfers at Ilorin Golf Club" class="desktop-bg">
+
+        <img src="assets/thecourse-bg-mobile.png" 
+        alt="Golfers at Ilorin Golf Club " class="mobile-bg">
+
+        
+        <div class="hero-overlay">
+        <div class="hero-content">
+        <h1 class="display-4 fw-bold mb-4">Tournament and Events</h1>
+        <p class="lead mb-4" style="font-family: 'Alegreya', serif;">The social and competitive heart of the club </p>
+        </div>
+        </div>
+    </section>
+
+    <section class="competitions-section">
+        <div class="container">
+            <h2 class="section-title">Our Competitions</h2>
+            
+            <div class="row g-4">
+                <!-- Public Holiday Competitions -->
+                <div class="col-md-4">
+                    <div class="competition-card">
+                        <div class="icon-circle orange">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Public Holiday Competitions</h3>
+                        <ul>
+                            <li>Ukraine Day</li>
+                            <li>Black Friday</li>
+                            <li>Christmas</li>
+                            <li>New Year</li>
+                            <li>Valentine's Day</li>
+                            <li>Independence Day USA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Club Competitions -->
+                <div class="col-md-4">
+                    <div class="competition-card">
+                        <div class="icon-circle green">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Club Competitions</h3>
+                        <ul>
+                            <li>Tennis Match</li>
+                            <li>Swimming Event</li>
+                            <li>Golf Tournament</li>
+                            <li>Basketball Game</li>
+                            <li>Volleyball Match</li>
+                            <li>Cricket and 10 Secondary</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Marketplace -->
+                <div class="col-md-4">
+                    <div class="competition-card">
+                        <div class="icon-circle blue">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Marketplace</h3>
+                        <ul>
+                            <li>Our Trusted Indian retailers</li>
+                            <li>ASDA Coin Store</li>
+                            <li>Win Free Coin and Withdraw for free</li>
+                            <li>British Coin Store</li>
+                            <li>8 Best Quality Coin dealer Worldwide</li>
+                            <li>Asian Coin Marketplace</li>
+                            <li>Free Weekly Prize Draws for $25k</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Dots
+            <div class="pagination-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>-->
+        </div>
+    </section>
+
+
+    <!--Host Event Section-->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5" style="color:#228B22;">Host Your Event</h2>
+            <div class="row g-4">
+
+            <!-- Corporate and Group Outings -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap-icon lucide-graduation-cap" style="vertical-align:middle; margin-right: 8px;">
+                            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" stroke="#D4AF37"/>
+                            <path d="M22 10v6" stroke="#D4AF37"/>
+                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" stroke="#D4AF37"/>
+                      </svg>
+                    Corporate and Group Outings
+                    </h5>
+                    <p style="font-family: Alegreya sans-serif; font-family: 400; font-size: 18px;">
+                        Host your next corporate event or group outing at IlorinGolf Club for a memorable experience. Our facilities provide the perfect backdrop for business and pleasure.
+                    </p>
+                </div>
+                </div>
+            </div>
+            
+            <!-- Weddings and Private Events -->
+           <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bow-arrow-icon lucide-bow-arrow" style="vertical-align:middle; margin-right: 8px;">
+                        <path d="M17 3h4v4"/>
+                        <path d="M18.575 11.082a13 13 0 0 1 1.048 9.027 1.17 1.17 0 0 1-1.914.597L14 17"/><path d="M7 10 3.29 6.29a1.17 1.17 0 0 1 .6-1.91 13 13 0 0 1 9.03 1.05"/><path d="M7 14a1.7 1.7 0 0 0-1.207.5l-2.646 2.646A.5.5 0 0 0 3.5 18H5a1 1 0 0 1 1 1v1.5a.5.5 0 0 0 .854.354L9.5 18.207A1.7 1.7 0 0 0 10 17v-2a1 1 0 0 0-1-1z"/><path d="M9.707 14.293 21 3"/>
+                      </svg>
+                    Weddings and Private Events
+                    </h5>
+                    <p style="font-family: Alegreya sans-serif; font-family: 400; font-size: 18px;">
+                    Celebrate your special day with us. Our elegant clubhouse and beautiful surroundings make for an unforgettable wedding or private event venue.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark pt-5 pb-3">
+        <div class="container-fluid px-4">
+            <div class="row">
+            
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold"><img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class="logo-text me-2" >Ilorin Golf Club</h5>
+                <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
+                <div>
+                <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                <a href="#" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                <li><a href="#" class="text-dark text-decoration-none">The Course</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">The Club</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Events</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Membership</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Book a Tee Time</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Explore</h5>
+                <ul class="list-unstyled">
+                <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Contact Us</h5>
+                <p>No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG</p>
+                <p>Email: <a href="mailto:info@iloringolf.org" class="text-dark text-decoration-none">info@iloringolf.org</a></p>
+                <p>Phone: +234-XXX-XXX-XXXX</p>
+            </div>
+            </div>
+
+            <div class="text-center mt-4 border-top pt-3">
+            <p class="mb-0">&copy; 2025 Ilorin Golf Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+.body{
+    margin: 0;
+    
+}
+
+.hero-section {
+    position: relative;
+    height: 600px;
+    color: white;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Default: show mobile, hide desktop */
+.desktop-bg {
+  display: none;
+}
+.mobile-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* From medium screens and above (≥768px), show desktop image */
+@media (min-width: 768px) {
+  .desktop-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .mobile-bg {
+    display: none;
+  }
+}
+
+.hero-section h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.hero-section p {
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  line-height: 1.4;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.competitions-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #228B22;
+}
+.competition-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.competition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.competition-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+        }
+        .competition-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .competition-card ul li {
+            padding: 8px 0;
+            color: #666;
+            font-size: 0.95rem;
+            position: relative;
+            padding-left: 25px;
+        }
+        .competition-card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #ffc107;
+        }
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .icon-circle.orange {
+            background-color: #fff3e0;
+            color: #ff9800;
+        }
+        .icon-circle.green {
+            background-color: #e8f5e9;
+            color: #4caf50;
+        }
+        .icon-circle.blue {
+            background-color: #e3f2fd;
+            color: #2196f3;
+        }
+        /*.pagination-dots {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .pagination-dots span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .pagination-dots span.active {
+            background-color: #ffc107;
+        }*/
