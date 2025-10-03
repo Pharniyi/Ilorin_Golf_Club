@@ -67,7 +67,7 @@
     <div class="container">
         <div class="row">
             <!-- Left Column - Form -->
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <div class="form-container">
                     <h1 class="main-title">Membership Application Form</h1>
                     <p class="subtitle">Please fill out the form below. Your application is subject to the approval of the Management Committee.</p>
@@ -82,13 +82,16 @@
 
                         <div class="mb-3">
                             <label for="postalAddress" class="form-label">2. Full Postal Address (Including P.O. Box)</label>
-                            <input type="text" class="form-control" id="postalAddress" placeholder="P.O. Box 123, Iberin">
+                            <input type="text" class="form-control" id="postalAddress" placeholder="P.O. Box 123, Ilorin">
                         </div>
 
                         <div class="mb-3">
                             <label for="dob" class="form-label">3. Date of Birth</label>
-                            <input type="date" class="form-control" id="dob" placeholder="Pick a date">
+                            <input type="text" class="form-control" id="dob" placeholder="Pick a date"
+                                    onfocus="(this.type='date')" 
+                                    onblur="if(!this.value) this.type='text'">
                         </div>
+
 
                         <div class="mb-3">
                             <label for="residentialAddress" class="form-label">4. Full Residential Address</label>
@@ -127,15 +130,64 @@
                                 <input class="form-check-input" type="radio" name="golfer" id="golferNo" value="no">
                                 <label class="form-check-label" for="golferNo">No</label>
                             </div>
+
+                            
+        <!-- Agreement Section -->
+        <div class="mb-4">
+            <div class="section-number mb-2">16. Agreement</div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="agreement" required>
+                <label class="form-check-label" for="agreement">
+                    By clicking, you hereby adhere to all the rules.
+                </label>
+            </div>
+        </div>
+
+        <!-- Introducers Section -->
+        <div>
+            <h5 class="section-title">Introducers</h5>
+            <p class="form-text-muted">
+                Please fill out the form below. Your application is subject to the approval of the Management Committee.
+            </p>
+
+            <div class="row g-3">
+                <!-- First Introducer -->
+                <div class="col-md-6">
+                    <label for="introducer1" class="form-label" style="color: #D4AF37;">
+                        <span class="label-number" >1.</span> Introducer's Name
+                    </label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="introducer1" 
+                        placeholder="Full name of first introducer"
+                        required>
+                </div>
+
+                <!-- Second Introducer -->
+                <div class="col-md-6">
+                    <label for="introducer2" class="form-label" style="color: #D4AF37;">
+                        <span class="label-number">2.</span> Introducer's Name
+                    </label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="introducer2" 
+                        placeholder="Full name of second introducer"
+                        required>
+                </div>
+            </div>
+        </div>
+    
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                        <button type="submit" class="btn w-100" style="background-color: #D4AF37;">Submit Application</button>
                     </form>
                 </div>
             </div>
 
             <!-- Right Column - Enrollment -->
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="enrollment-container">
                     <h2 class="enrollment-title">Enrollment & Subscription</h2>
                     <p class="enrollment-subtitle">As Fixed by the Club</p>
@@ -221,7 +273,7 @@
                 <ul class="list-unstyled">
                 <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
                 <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Gallery</a></li>
+                <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
                 </ul>
             </div>
 

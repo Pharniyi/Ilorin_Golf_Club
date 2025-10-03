@@ -57,14 +57,14 @@
         
         <div class="hero-overlay">
         <div class="hero-content">
-        <h1 class="display-4 fw-bold">Book a Tee Time</h1>
+        <h1 class="display-4 fw-bold mb-4">Book a Tee Time</h1>
         <p class="lead mb-4" style="font-family: 'Alegreya', serif;">Secure your spot on your championship course </p>
         </div>
         </div>
     </section>
 
     <!--TeeTime Booking Section-->
-    <div class="container">
+    <div class="container my-5">
         <div class="reservation-container">
             <h1 class="form-title">Reservation Details</h1>
             <p class="form-subtitle">Please fill out the form below to request a tee time. We will contact you to confirm your booking.</p>
@@ -90,13 +90,18 @@
 
                 <!-- Date and Preferred Time -->
                 <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="date" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="date" placeholder="Pick a Date">
-                    </div>
+                    <div class="col-md-6 mb-3">
+                            <label for="dob" class="form-label">Date</label>
+                            <input type="text" class="form-control" id="dob" placeholder="Pick a date"
+                                    onfocus="(this.type='date')" 
+                                    onblur="if(!this.value) this.type='text'">
+                        </div>
                     <div class="col-md-6">
                         <label for="time" class="form-label">Preferred Time</label>
-                        <input type="time" class="form-control" id="time" placeholder="Select a Time Slot">
+                        
+                        <input type="time" class="form-control" id="time" placeholder="Select a Time Slot"
+                                    onfocus="(this.type='time')" 
+                                    onblur="if(!this.value) this.type='text'">
                     </div>
                 </div>
 
@@ -114,7 +119,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" class="btn btn-submit">Submit Request</button>
+                <button type="submit" class="btn btn-submit" style="background-color: #D4AF37;">Submit Request</button>
             </form>
         </div>
     </div>
@@ -151,7 +156,7 @@
                 <ul class="list-unstyled">
                 <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
                 <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Gallery</a></li>
+                <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
                 </ul>
             </div>
 

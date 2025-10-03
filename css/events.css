@@ -96,50 +96,19 @@
     margin-bottom: 20px;
     color: #333;
         }
-        .competition-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+.competition-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
         }
-        .competition-card ul li {
-            padding: 8px 0;
-            color: #666;
-            font-size: 0.95rem;
-            position: relative;
-            padding-left: 25px;
+.competition-card ul li {
+  color: #000;
+  font-size: 0.95rem;
+  position: relative;
+  padding: 8px 0;
         }
-        .competition-card ul li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #ffc107;
-        }
-        .icon-circle {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .icon-circle.orange {
-            background-color: #fff3e0;
-            color: #ff9800;
-        }
-        .icon-circle.green {
-            background-color: #e8f5e9;
-            color: #4caf50;
-        }
-        .icon-circle.blue {
-            background-color: #e3f2fd;
-            color: #2196f3;
-        }
+       
+
         /*.pagination-dots {
             text-align: center;
             margin-top: 40px;
