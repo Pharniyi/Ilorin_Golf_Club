@@ -15,11 +15,11 @@
 <body class="bg-light">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
     <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
       <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
-        <img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
-        Ilorin Golf Club
+        <img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
+       <span>Ilorin Golf Club</span> 
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -38,34 +38,54 @@
           <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="membership.html">Membership</a></li>
         </ul>
         <div class="d-lg-none d-block">
-            <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;">Book a Tee Time</a>
+            <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;">Book a Tee Time</a>
         </div>
       </div>
 
       <div class="d-none d-lg-block">
-        <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;"> Book a Tee Time</a>
+        <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;"> Book a Tee Time</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <img src="assets/home-bg.png" 
+  <section class="hero-section overflow-hidden">
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/homebg.jpg" 
+        alt="Golfers at Ilorin Golf Club" class="desktop-bg">
+
+        <img src="assets/home-bg-mobile.png" 
+        alt="Golfers at Ilorin Golf Club " class="mobile-bg">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homebg2.jpg" class=" desktop-bg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homebg3.1.jpg" class=" desktop-bg" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <!--<img src="assets/homebg.jpg" 
      alt="Golfers at Ilorin Golf Club" class="desktop-bg">
 
     <img src="assets/home-bg-mobile.png" 
-     alt="Golfers at Ilorin Golf Club " class="mobile-bg">
+     alt="Golfers at Ilorin Golf Club " class="mobile-bg"> 
 
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay"></div>-->
     <div class="hero-content">
       <h1 class="display-4 fw-bold">Ilorin Golf Club</h1>
     <p class="lead mb-4" style="font-family: 'Alegreya', serif;">Championship Golf in the Heart of Ilorin. Experience 18 holes of pristine fairways, professional instruction, and timeless club tradition </p>
     <div class="d-flex flex-column flex-sm-row justify-content-center align-items-stretch gap-3">
       <a href="#" class="btn btn-sm fw-bold px-4 d-flex align-items-center justify-content-center" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;">
         <span class="me-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tickets-icon lucide-tickets"><path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8"/><path d="M6 10V8"/><path d="M6 14v1"/><path d="M6 19v2"/><rect x="2" y="8" width="20" height="13" rx="2"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tickets-icon lucide-tickets"><path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8"/><path d="M6 10V8"/><path d="M6 14v1"/><path d="M6 19v2"/><rect x="2" y="8" width="20" height="13" rx="2"/></svg>
         </span>
-        Book Tee Time
+        <span class="text-nowrap text-light">Book Tee Time</span>
+        
       </a>
       <a href="#" class="btn btn-sm text-white fw-bold px-4 d-flex align-items-center justify-content-center" style="background-color:#228B22; border-color: #228B22;">
         <span class="me-2">
@@ -81,8 +101,8 @@
   <!-- About Section -->
   <section class="py-5 bg-white">
     <div class="container-fluid px-4">
-      <div class="row align-items-center">
-        <div class="col-md-6">
+      <div class="row align-items-stretch">
+        <div class="col-md-6 py-4">
           <h2 class="fw-bold text-success">A Legacy of Excellence</h2>
           <p class="text-muted mt-3">
             Founded to be the heart of golf in Kwara State, Ilorin Golf Club blends a proud heritage with modern facilities. Our 18-hole championship course offers a challenging yet enjoyable experience for every skill level.
@@ -90,8 +110,8 @@
           <p class="text-muted ">From beginner lessons at our Academy to elite tournaments, the club fosters a welcoming community for players, families and corporate guests. Explore where tradition meets excellence.</p>
         </div>
         <div class="col-md-6">
-          <img src="assets/home-legacydesktop.png" alt="Golf course" class="img-fluid rounded shadow Golf-course-desktop">
-          <img src="assets/home-legacymobile.png" alt="Golf course" class="img-fluid rounded shadow Golf-course-mobile">
+          <img src="assets/home-legacydesktop.png" alt="Golf course" class="img-fluid rounded shadow Golf-course-desktop w-100 h-100 ">
+          <img src="assets/home-legacymobile.png" alt="Golf course" class="img-fluid rounded shadow Golf-course-mobile w-100 h-100">
         </div>
       </div>
     </div>
@@ -311,7 +331,7 @@
         <div class="row">
         
         <div class="col-md-3 mb-4">
-            <h5 class="fw-bold"><img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class="logo-text me-2" >Ilorin Golf Club</h5>
+            <h5 class="fw-bold d-flex align-items-center"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width: 40px; height: 40px;" >Ilorin Golf Club</h5>
             <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
             <div>
             <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
@@ -354,7 +374,8 @@
     </div>
   </footer>
 
-
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
