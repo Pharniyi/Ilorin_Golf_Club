@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/membership.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+        <img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
+       <span>Ilorin Golf Club</span> 
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-dark fw-semibold" href="index.html">Home</a>
+            </li></li>
+            <li class="nav-item">
+                <a class="nav-link active fw-semibold" href="course.html">The Course</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active fw-semibold" href="club.html" >The Club</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="membership.html" style="color: #D4AF37; background: transparent;">Membership</a></li>
+            </ul>
+            <div class="d-lg-none d-block">
+                <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;">Book a Tee Time</a>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+            <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;"> Book a Tee Time</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">        
+        <img src="assets/thecourse-bg.jpg" 
+        alt="Golfers at Ilorin Golf Club" class="desktop-bg">
+
+        <img src="assets/thecourse-bg-mobile.png" 
+        alt="Golfers at Ilorin Golf Club " class="mobile-bg">
+
+        
+        <div class="hero-overlay">
+        <div class="hero-content">
+        <h1 class="display-4 fw-bold mb-4">Join Us & Get In Touch</h1>
+        <p class="lead mb-4" style="font-family: 'Alegreya', serif;">Become a part of our community </p>
+        </div>
+        </div>
+    </section>
+
+    <!--Membership Form-->
+    <div class="container">
+        <div class="row">
+            <!-- Left Column - Form -->
+            <div class="col-lg-7">
+                <div class="form-container">
+                    <h1 class="main-title">Membership Application Form</h1>
+                    <p class="subtitle">Please fill out the form below. Your application is subject to the approval of the Management Committee.</p>
+                    
+                    <form>
+                        <div class="section-title">Personal Information</div>
+                        
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">1. Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="postalAddress" class="form-label">2. Full Postal Address (Including P.O. Box)</label>
+                            <input type="text" class="form-control" id="postalAddress" placeholder="P.O. Box 123, Ilorin">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">3. Date of Birth</label>
+                            <input type="text" class="form-control" id="dob" placeholder="Pick a date"
+                                    onfocus="(this.type='date')" 
+                                    onblur="if(!this.value) this.type='text'">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="residentialAddress" class="form-label">4. Full Residential Address</label>
+                            <input type="text" class="form-control" id="residentialAddress" placeholder="Your Home Address">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telephone" class="form-label">5. Telephone No.</label>
+                            <input type="tel" class="form-control" id="telephone" placeholder="+234...">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="maritalStatus" class="form-label">6. Marital Status</label>
+                            <input type="text" class="form-control" id="maritalStatus">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="profession" class="form-label">7. Profession</label>
+                            <input type="text" class="form-control" id="profession" placeholder="e.g. Doctor, Engineer">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="employerAddress" class="form-label">8. Address of Employer</label>
+                            <input type="text" class="form-control" id="employerAddress" placeholder="Your employer's address">
+                        </div>
+
+                        <div class="section-title">9. Golf Experience</div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Are you a golfer?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="golfer" id="golferYes" value="yes">
+                                <label class="form-check-label" for="golferYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="golfer" id="golferNo" value="no">
+                                <label class="form-check-label" for="golferNo">No</label>
+                            </div>
+
+                            
+        <!-- Agreement Section -->
+        <div class="mb-4">
+            <div class="section-number mb-2">16. Agreement</div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="agreement" required>
+                <label class="form-check-label" for="agreement">
+                    By clicking, you hereby adhere to all the rules.
+                </label>
+            </div>
+        </div>
+
+        <!-- Introducers Section -->
+        <div>
+            <h5 class="section-title">Introducers</h5>
+            <p class="form-text-muted">
+                Please fill out the form below. Your application is subject to the approval of the Management Committee.
+            </p>
+
+            <div class="row g-3">
+                <!-- First Introducer -->
+                <div class="col-md-6">
+                    <label for="introducer1" class="form-label" style="color: #D4AF37;">
+                        <span class="label-number" >1.</span> Introducer's Name
+                    </label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="introducer1" 
+                        placeholder="Full name of first introducer"
+                        required>
+                </div>
+
+                <!-- Second Introducer -->
+                <div class="col-md-6">
+                    <label for="introducer2" class="form-label" style="color: #D4AF37;">
+                        <span class="label-number">2.</span> Introducer's Name
+                    </label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="introducer2" 
+                        placeholder="Full name of second introducer"
+                        required>
+                </div>
+            </div>
+        </div>
+    
+                        </div>
+
+                        <button type="submit" class="btn w-100" style="background-color: #D4AF37;">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column - Enrollment -->
+            <div class="col-lg-5">
+                <div class="enrollment-container">
+                    <h2 class="enrollment-title">Enrollment & Subscription</h2>
+                    <p class="enrollment-subtitle">As Fixed by the Club</p>
+                    
+                    <div class="pricing-table">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Enrollment</th>
+                                    <th>Annual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Full (Men)</td>
+                                    <td>₦300,000</td>
+                                    <td>₦300,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Full (Ladies)</td>
+                                    <td>₦300,000</td>
+                                    <td>₦300,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>₦300,000</td>
+                                    <td>₦300,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Associate</td>
+                                    <td>₦300,000</td>
+                                    <td>₦300,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="important-notes">
+                        <h6>Important Notes</h6>
+                        <ol>
+                            <li>Admission is subject to approval of the Management Committee.</li>
+                            <li>Please return this form with two passport size photographs.</li>
+                            <li>Enrollment Fee and the Annual Subscription must be PAID at the time of submitting the application form.</li>
+                            <li>On payment you are entitled to the facilities of the club pending approval which could be within 4-6 weeks.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark pt-5 pb-3">
+        <div class="container-fluid px-4">
+            <div class="row">
+            
+            <div class="col-md-3 mb-4">
+<h5 class="fw-bold d-flex align-items-center"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width: 40px; height: 40px;" >Ilorin Golf Club</h5>
+                <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
+                <div>
+                <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                <a href="#" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                <li><a href="#" class="text-dark text-decoration-none">The Course</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">The Club</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Events</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Membership</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Book a Tee Time</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Explore</h5>
+                <ul class="list-unstyled">
+                <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
+                <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
+                <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Contact Us</h5>
+                <p>No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG</p>
+                <p>Email: <a href="mailto:info@iloringolf.org" class="text-dark text-decoration-none">info@iloringolf.org</a></p>
+                <p>Phone: +234-XXX-XXX-XXXX</p>
+            </div>
+            </div>
+
+            <div class="text-center mt-4 border-top pt-3">
+            <p class="mb-0">&copy; 2025 Ilorin Golf Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

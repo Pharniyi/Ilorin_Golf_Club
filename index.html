@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilorin Golf Club Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+        <img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
+       <span>Ilorin Golf Club</span> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" href="index.html" style="color: #D4AF37; background: transparent;">Home</a>
+          </li></li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fw-semibold" href="course.html">The Course</a>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="club.html">The Club</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="membership.html">Membership</a></li>
+        </ul>
+        <div class="d-lg-none d-block">
+            <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;">Book a Tee Time</a>
+        </div>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;"> Book a Tee Time</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section overflow-hidden">
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner position-relative" style="isolation: isolate;">
+        <div class="position-absolute shadow-overlay"></div>
+        <div class="carousel-item active">
+          <img src="assets/homebg.jpg" 
+        alt="Golfers at Ilorin Golf Club" class="desktop-bg">
+
+        <img src="assets/home-bg-mobile.jpg" 
+        alt="Golfers at Ilorin Golf Club " class="mobile-bg">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homebg2.jpg" class=" desktop-bg" alt="">
+          <img src="assets/home-bg-mobile2.jpg" class=" mobile-bg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/homebg3.1.jpg" class=" desktop-bg" alt="...">
+          <img src="assets/home-bg-mobile3.jpg" class=" mobile-bg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!--<img src="assets/homebg.jpg" 
+     alt="Golfers at Ilorin Golf Club" class="desktop-bg">
+
+    <img src="assets/home-bg-mobile.png" 
+     alt="Golfers at Ilorin Golf Club " class="mobile-bg"> 
+
+    <div class="hero-overlay"></div>-->
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Ilorin Golf Club</h1>
+    <p class="lead mb-4" style="font-family: 'Alegreya', serif;">Championship Golf in the Heart of Ilorin. Experience 18 holes of pristine fairways, professional instruction, and timeless club tradition </p>
+    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-stretch gap-3">
+      <a href="TeeTime.html" class="btn btn-sm fw-bold px-4 d-flex align-items-center justify-content-center" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;">
+        <span class="me-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tickets-icon lucide-tickets"><path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8"/><path d="M6 10V8"/><path d="M6 14v1"/><path d="M6 19v2"/><rect x="2" y="8" width="20" height="13" rx="2"/></svg>
+        </span>
+        <span class="text-nowrap text-light">Book Tee Time</span>
+        
+      </a>
+      <a href="membership.html" class="btn btn-sm text-white fw-bold px-4 d-flex align-items-center justify-content-center" style="background-color:#228B22; border-color: #228B22;">
+        <span class="me-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+        </span>
+        <span class="text-nowrap">Become a Member</span>
+        
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5 bg-white">
+    <div class="container-fluid px-4">
+      <div class="row align-items-stretch">
+        <div class="col-md-6 py-4">
+          <h2 class="fw-bold text-success">A Legacy of Excellence</h2>
+          <p class="text-muted mt-3">
+            Founded to be the heart of golf in Kwara State, Ilorin Golf Club blends a proud heritage with modern facilities. Our 18-hole championship course offers a challenging yet enjoyable experience for every skill level.
+          </p>
+          <p class="text-muted ">From beginner lessons at our Academy to elite tournaments, the club fosters a welcoming community for players, families and corporate guests. Explore where tradition meets excellence.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/home-legacydesktop.png" alt="Golf course" class="img-fluid rounded shadow Golf-course-desktop w-100 h-100 ">
+          <img src="assets/home-legacymobile.png" alt="Golf course" class="img-fluid rounded shadow Golf-course-mobile w-100 h-100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Course Section-->
+  <section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold">The Course</h2>
+    <p class="text-muted">An 18-hole masterpiece designed to challenge and inspire.</p>
+
+    <div class="row mt-4 g-4">
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">18 Holes</h5>
+            <p class="text-muted mb-0">Championship Layout</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">Par 72</h5>
+            <p class="text-muted mb-0">A True Test of Golf</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">6,800 Yards</h5>
+            <p class="text-muted mb-0">Lush, Manicured Fairways</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">Practice Facilities</h5>
+            <p class="text-muted mb-0">Driving Range & Putting Greens</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- From Our Members Section -->
+  <section class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">From Our Members</h2>
+        <p class="text-muted">Hear what our community has to say.</p>
+
+        <div id="testimonialCarousel" class="carousel slide mt-4 d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                    <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                    <blockquote class="blockquote">
+                        <p class="member-text">"We hosted our annual corporate event here, and the service was outstanding. A fantastic venue for business and pleasure."</p>
+                    </blockquote>
+                    <footer class=" fw-bold">
+                        Fatima Bello <p class="fw-normal">Corporate Member</p>
+                    </footer>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-md-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                    <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                    <blockquote class="blockquote">
+                        <p class="member-text">"The course is always in excellent condition. Truly one of the best golf experiences in Nigeria. A fantastic venue for business and pleasure."</p>
+                    </blockquote>
+                    <footer class="fw-bold">
+                        John Doe <p class="fw-normal">Club Member</p>
+                    </footer>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                    <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                    <blockquote class="blockquote">
+                        <p class="member-text">"A beautiful, welcoming club. Great people and an amazing atmosphere. A fantastic venue for business and pleasure."</p>
+                    </blockquote>
+                    <footer class="fw-bold">
+                        Mary Johnson <p class="fw-normal">Associate Member</p>
+                    </footer>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-md-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                    <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                    <blockquote class="blockquote">
+                        <p class="member-text">"I love the practice facilities, the driving range is top-notch and perfect for sharpening skills. A fantastic venue for business and pleasure."</p>
+                    </blockquote>
+                    <footer class="fw-bold">
+                        Ahmed Musa <p class="fw-normal">Golf Enthusiast</p>
+                    </footer>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        
+        <div id="testimonialCarouselMobile" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                  <blockquote class="blockquote">
+                    <p class="member-text">"We hosted our annual corporate event here, and the service was outstanding."</p>
+                  </blockquote>
+                  <footer class="fw-bold">
+                    Fatima Bello <p class="fw-normal">Corporate Member</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                  <blockquote class="blockquote">
+                    <p class="member-text">"The course is always in excellent condition. Truly one of the best golf experiences."</p>
+                  </blockquote>
+                  <footer class="fw-bold">
+                    John Doe <p class="fw-normal">Club Member</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                  <blockquote class="blockquote">
+                    <p class="member-text">"A beautiful, welcoming club. Great people and an amazing atmosphere."</p>
+                  </blockquote>
+                  <footer class="fw-bold">
+                    Mary Johnson <p class="fw-normal">Associate Member</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <img src="assets/member1.png" class="rounded-circle mb-3" alt="Member" width="80" height="80">
+                  <blockquote class="blockquote">
+                    <p class="member-text">"I love the practice facilities, the driving range is top-notch for sharpening skills."</p>
+                  </blockquote>
+                  <footer class="fw-bold">
+                    Ahmed Musa <p class="fw-normal">Golf Enthusiast</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+         
+        
+        </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-5 text-center text-white" style="background-color: #2E7D32;">
+    <div class="container">
+        <h2 class="fw-bold mb-3">Ready to Play?</h2>
+        <p class="mb-4">Join us for a round of golf, become a member, or host your next event at Ilorin's premier golf destination.</p>
+        <div class="row d-sm-inline justify-content-center g-3">
+          <a href="TeeTime.html" class="btn me-2 col-10 col-sm-5 d-sm-inline" style="background-color: #D4AF37;">Book a Tee Time</a>
+          <a href="#" class="btn btn-light col-10 col-sm-5 d-sm-inline">Explore Events</a>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-dark pt-5 pb-3">
+    <div class="container-fluid px-4">
+        <div class="row">
+        
+        <div class="col-md-3 mb-4">
+            <h5 class="fw-bold d-flex align-items-center"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width: 40px; height: 40px;" >Ilorin Golf Club</h5>
+            <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
+            <div>
+            <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="#" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">The Course</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">The Club</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Events</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Membership</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Book a Tee Time</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">Explore</h5>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
+            <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">Contact Us</h5>
+            <p>No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG</p>
+            <p>Email: <a href="mailto:info@iloringolf.org" class="text-dark text-decoration-none">info@iloringolf.org</a></p>
+            <p>Phone: +234-XXX-XXX-XXXX</p>
+        </div>
+        </div>
+
+        <div class="text-center mt-4 border-top pt-3">
+        <p class="mb-0">&copy; 2025 Ilorin Golf Club. All Rights Reserved.</p>
+        </div>
+    </div>
+  </footer>
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>  
