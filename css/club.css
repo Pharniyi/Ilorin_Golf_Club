@@ -1,6 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
 .body{
     margin: 0;
     
+}
+
+.logo-wrapper {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  width: 70%;
+  height: auto;
+  padding: 4px;
+}
+
+.brand-name {
+  font-size: clamp(14px, 2vw, 20px); 
+  font-weight: 700;
+  color: #000;
+}
+
+.hero-content h1{
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-content p{
+  font-family: 'Alegreya', sans-serif;
 }
 
 .hero-section {
@@ -66,3 +100,112 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: white !important; /* Keeps background white */
+    color: black !important; /* Keeps text readable */
+  }
+
+  .accordion {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+  }
+
+  /* === Accordion Button Styling === */
+  .accordion-button {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #222;
+    padding: 1rem 1.25rem;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #f9f9f9;
+    color: #006400;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .accordion-button:hover {
+    background-color: #f2f2f2;
+    color: #004d00;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+
+  /* === Accordion Body Styling === */
+  .accordion-body {
+    font-size: 15px;
+    font-family: 'Alegreya', sans-serif;
+    line-height: 1.7;
+    background-color: #fff;
+    padding: 1rem 1.25rem;
+  }
+
+  .accordion-body ul li {
+    font-size: 15px;
+    font-family: 'Alegreya', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  /* === Accordion Item Border Separation === */
+  .accordion-item {
+    border-bottom: none !important;
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+
+  /* === Responsive Adjustments === */
+  @media (max-width: 992px) {
+    .accordion-button {
+      font-size: 16px;
+      font-family: 'Alegreya', sans-serif;
+      padding: 0.9rem 1rem;
+    }
+
+    .accordion-body,
+    .accordion-body ul li {
+      font-size: 14px;
+      font-family: 'Alegreya', sans-serif;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .accordion-button {
+      font-size: 15px;
+      font-family: 'Alegreya', sans-serif;
+      padding: 0.8rem 0.9rem;
+    }
+
+    .accordion-body,
+    .accordion-body ul li {
+      font-size: 13px;
+      font-family: 'Alegreya', sans-serif;
+    }
+  }
+
+  .h1, h2,h3,h4,h5,h6{
+    font-family: 'raleway',sans-serif;
+  }
+
+  p{
+    font-family: 'Alegreya', sans-serif;
+  }

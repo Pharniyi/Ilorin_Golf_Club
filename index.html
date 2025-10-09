@@ -18,8 +18,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
     <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
       <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
-        <img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
-       <span>Ilorin Golf Club</span> 
+        <div class="logo-wrapper me-2"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text "></div>
+       <span class="brand-name">Ilorin Golf Club</span> 
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
           <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="events.html">Events</a></li>
           <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="membership.html">Membership</a></li>
         </ul>
-        <div class="d-lg-none d-block">
+        <div class="d-lg-none d-block pb-2">
             <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;">Book a Tee Time</a>
         </div>
       </div>
@@ -81,7 +81,7 @@
     <div class="hero-overlay"></div>-->
     <div class="hero-content">
       <h1 class="display-4 fw-bold">Ilorin Golf Club</h1>
-    <p class="lead mb-4" style="font-family: 'Alegreya', serif;">Championship Golf in the Heart of Ilorin. Experience 18 holes of pristine fairways, professional instruction, and timeless club tradition </p>
+    <p class="lead mb-4">Championship Golf in the Heart of Ilorin. Experience 18 holes of pristine fairways, professional instruction, and timeless club tradition </p>
     <div class="d-flex flex-column flex-sm-row justify-content-center align-items-stretch gap-3">
       <a href="TeeTime.html" class="btn btn-sm fw-bold px-4 d-flex align-items-center justify-content-center" style="background-color: #D4AF37; border-color: #D4AF37; color: #000;">
         <span class="me-2">
@@ -323,7 +323,7 @@
         <p class="mb-4">Join us for a round of golf, become a member, or host your next event at Ilorin's premier golf destination.</p>
         <div class="row d-sm-inline justify-content-center g-3">
           <a href="TeeTime.html" class="btn me-2 col-10 col-sm-5 d-sm-inline" style="background-color: #D4AF37;">Book a Tee Time</a>
-          <a href="#" class="btn btn-light col-10 col-sm-5 d-sm-inline">Explore Events</a>
+          <a href="events.html" class="btn btn-light col-10 col-sm-5 d-sm-inline">Explore Events</a>
         </div>
     </div>
   </section>
@@ -334,7 +334,10 @@
         <div class="row">
         
         <div class="col-md-3 mb-4">
-            <h5 class="fw-bold d-flex align-items-center"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width: 40px; height: 40px;" >Ilorin Golf Club</h5>
+            <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+        <div class="logo-wrapper me-2"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text "></div>
+       <span >Ilorin Golf Club</span> 
+      </a>
             <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
             <div>
             <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
@@ -344,7 +347,7 @@
         </div>
 
         <div class="col-md-3 mb-4">
-            <h5 class="fw-bold">Quick Links</h5>
+            <h5 >Quick Links</h5>
             <ul class="list-unstyled">
             <li><a href="#" class="text-dark text-decoration-none">The Course</a></li>
             <li><a href="#" class="text-dark text-decoration-none">The Club</a></li>
@@ -355,7 +358,7 @@
         </div>
 
         <div class="col-md-3 mb-4">
-            <h5 class="fw-bold">Explore</h5>
+            <h5>Explore</h5>
             <ul class="list-unstyled">
             <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
             <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
@@ -364,7 +367,7 @@
         </div>
 
         <div class="col-md-3 mb-4">
-            <h5 class="fw-bold">Contact Us</h5>
+            <h5>Contact Us</h5>
             <p>No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG</p>
             <p>Email: <a href="mailto:info@iloringolf.org" class="text-dark text-decoration-none">info@iloringolf.org</a></p>
             <p>Phone: +234-XXX-XXX-XXXX</p>
@@ -377,8 +380,7 @@
     </div>
   </footer>
 
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -15,10 +15,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
-        <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
-            <img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width:40px; height:40px;">
-            <span> Ilorin Golf Club</span>
-        </a>
+          <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+        <div class="logo-wrapper me-2"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text "></div>
+       <span>Ilorin Golf Club</span> 
+      </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +35,7 @@
             <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="events.html">Events</a></li>
             <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="membership.html">Membership</a></li>
             </ul>
-            <div class="d-lg-none d-block">
+            <div class="d-lg-none d-block pb-2">
                 <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;">Book a Tee Time</a>
             </div>
         </div>
@@ -58,54 +58,165 @@
         <div class="hero-overlay">
         <div class="hero-content">
         <h1 class="display-4 fw-bold">Gallery</h1>
-        <p class="lead mb-4" style="font-family: 'Alegreya', serif;">A glimpse into the beauty and community of Ilorin Golf Club. </p>
+        <p class="lead mb-4">A glimpse into the beauty and community of Ilorin Golf Club. </p>
         </div>
         </div>
     </section>
 
     <!--Gallery Section-->
-    <div class="container">
-        <div class="gallery-container">
-            <!-- Row 1 -->
-            <div class="row">
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg1.png" alt="Golfers on the course">
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg2.png" alt="Golfers shaking hands">
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg3.png" alt="Golfer teeing off">
-                </div>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="row">
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg1.png" alt="Golfers practicing">
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg2.png" alt="Golf course view">
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg3.png" alt="Golfers meeting">
-                </div>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="row">
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg1.png" alt="Golf training">
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg2.png" alt="Golf flag on course">
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <img src="assets/galleryimg3.png" alt="Golfers discussion">
-                </div>
+    <div class="container py-5 d-none d-md-block">
+    <div class="row g-4">
+        <!-- Row 1 -->
+        <div class="col-md-4">
+        <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="assets/galleryimg1.png" class="card-img-top" alt="Golfers on the course">
+            <div class="card-body">
+            <p class="card-text text-center fw-bold">Golf Ball</p>
+            <p class="text-center card-p">A moment of anticipation. A perfectly struck putt rolls just inches from the cup on a pristine green.</p>
             </div>
         </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+            <img src="assets/galleryimg2.png" class="card-img-top" alt="Golfers shaking hands">
+            <div class="card-body">
+            <p class="card-text text-center fw-bold">Golf Bunker</p>
+            <p class="text-center  card-p">A strategically placed bunker challenges golfers, its white sand contrasting beautifully with the lush green fairway.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+            <img src="assets/galleryimg3.png" class="card-img-top" alt="Golfer teeing off">
+            <div class="card-body">
+            <p class="card-text text-center fw-bold">Golf Players</p>
+            <p class="text-center card-p">The spirit of sportsmanship is captured as two members share a handshake and a smile after a competitive round.</p>
+            </div>
+        </div>
+        </div>
     </div>
+
+  <div class="row g-4 mt-3">
+    <!-- Row 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+        <img src="assets/galleryimg1.png" class="card-img-top" alt="Golfers practicing">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Golf Bunkers</p>
+          <p class="text-center card-p">A strategically placed bunker challenges golfers, its white sand contrasting beautifully with the lush green fairway.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+        <img src="assets/galleryimg2.png" class="card-img-top" alt="Golf course view">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Golf Players</p>
+          <p class="text-center card-p">The spirit of sportsmanship is captured as two members share a handshake and a smile after a competitive round.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+        <img src="assets/galleryimg3.png" class="card-img-top" alt="Golfers meeting">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Golf Ball</p>
+          <p class="text-center card-p">A moment of anticipation. A perfectly struck putt rolls just inches from the cup on a pristine green.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <!-- Row 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+        <img src="assets/galleryimg1.png" class="card-img-top" alt="Golf training">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Golf Players</p>
+          <p class="text-center card-p">The spirit of sportsmanship is captured as two members share a handshake and a smile after a competitive round.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+        <img src="assets/galleryimg2.png" class="card-img-top" alt="Golf flag on course">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Golf Ball</p>
+          <p class="text-center card-p">A moment of anticipation. A perfectly struck putt rolls just inches from the cup on a pristine green.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+
+        <img src="assets/galleryimg3.png" class="card-img-top" alt="Golfers discussion">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Golf Bunkers</p>
+          <p class="text-center card-p">A strategically placed bunker challenges golfers, its white sand contrasting beautifully with the lush green fairway.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+     <div id="galleryCarousel" class="carousel slide pt-5 d-block d-md-none" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+            <div class="card shadow-sm text-center mx-auto" style="width: 90%;">
+                <img src="assets/galleryimg1.png" class="card-img-top" alt="Golfers on the course">
+                <div class="card-body">
+                <p class="fw-bold mb-1">Golf Ball</p>
+                <p class="card-p mb-0">A moment of anticipation. A perfectly struck putt rolls just inches from the cup on a pristine green.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+            <div class="card shadow-sm text-center mx-auto" style="width: 90%;">
+                <img src="assets/galleryimg2.png" class="card-img-top" alt="Golfers shaking hands">
+                <div class="card-body">
+                <p class="fw-bold mb-1">Golf Bunker</p>
+                <p class="card-p mb-0">A strategically placed bunker challenges golfers, its white sand contrasting beautifully with the lush green fairway.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+            <div class="card shadow-sm text-center mx-auto" style="width: 90%;">
+                <img src="assets/galleryimg3.png" class="card-img-top" alt="Golfer teeing off">
+                <div class="card-body">
+                <p class="fw-bold mb-1">Golf Players</p>
+                <p class="card-p mb-0">The spirit of sportsmanship is captured as two members share a handshake and a smile after a competitive round.</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+  <!-- Controls 
+  <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>-->
+     </div>
+
 
 
     <!-- Footer -->
@@ -114,7 +225,10 @@
             <div class="row">
             
             <div class="col-md-3 mb-4">
-<h5 class="fw-bold d-flex align-items-center"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text me-2" style="width: 40px; height: 40px;" >Ilorin Golf Club</h5>
+                  <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+        <div class="logo-wrapper me-2"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text "></div>
+       <span>Ilorin Golf Club</span> 
+      </a>
                 <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
                 <div>
                 <a href="#" class="text-dark me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>

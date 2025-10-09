@@ -1,6 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
 .body{
     margin: 0;
     
+}
+
+.logo-wrapper {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  width: 70%;
+  height: auto;
+  padding: 4px;
+}
+
+.brand-name {
+  font-size: clamp(14px, 2vw, 20px); 
+  font-weight: 700;
+  color: #000;
+}
+
+.hero-content h1{
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-content p{
+  font-family: 'Alegreya', sans-serif;
 }
 
 .hero-section {
@@ -38,6 +72,7 @@
 }
 
 .hero-section h1 {
+
   font-size: clamp(1.5rem, 5vw, 3rem);
   line-height: 1.2;
   text-align: center;
@@ -75,8 +110,9 @@
     text-align: center;
     margin-bottom: 50px;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #228B22;
+    font-family: 'raleway', sans-serif;
 }
 .competition-card {
     background: white;
@@ -91,24 +127,28 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 .competition-card h3 {
+    font-family: 'Alegreya', sans-serif; 
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 20px;
     color: #333;
         }
-.competition-card ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-        }
+
 .competition-card ul li {
   color: #000;
+  font-family: 'Alegreya', sans-serif; 
   font-size: 0.95rem;
   position: relative;
   padding: 8px 0;
         }
        
+.h1, h2,h3,h4,h5,h6{
+    font-family: 'raleway',sans-serif;
+  }
 
+  p{
+    font-family: 'Alegreya', sans-serif;
+  }
         /*.pagination-dots {
             text-align: center;
             margin-top: 40px;

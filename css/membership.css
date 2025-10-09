@@ -1,6 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
 .body{
     margin: 0;
     
+}
+
+.logo-wrapper {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  width: 70%;
+  height: auto;
+  padding: 4px;
+}
+
+.brand-name {
+  font-size: clamp(14px, 2vw, 20px); 
+  font-weight: 700;
+  color: #000;
+}
+
+.hero-content h1{
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-content p{
+  font-family: 'Alegreya', sans-serif;
 }
 
 .hero-section {
@@ -103,13 +137,13 @@
             box-shadow: 0 0 0 0.2rem rgba(212, 165, 116, 0.25);
         }
         .main-title {
-            font-family: raleway, sans-serif;
+            font-family: 'raleway', sans-serif;
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 10px;
         }
         .subtitle {
-            font-family: Alegreya, sans-serif;
+            font-family: 'Alegreya', sans-serif;
             font-weight: 400;
             color: #0A0A0A;
             font-size: 16px;
@@ -118,10 +152,11 @@
         .enrollment-title {
             font-size: 1.25rem;
             font-weight: 700;
-            font-family:raleway, sans-serif;
+            font-family:'raleway', sans-serif;
             margin-bottom: 8px;
         }
         .enrollment-subtitle {
+            font-family: 'Alegreya', sans-serif;
             font-size: 0.85rem;
             font-weight: 600;
             color: #333;
@@ -152,12 +187,14 @@
             margin-top: 20px;
         }
         .important-notes h6 {
+            font-family: 'Alegreya', sans-serif;
             font-weight: 600;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
         }
         .important-notes h6::before {
+            font-family: 'Alegreya', sans-serif;
             content: "ⓘ";
             margin-right: 8px;
             font-size: 1.1rem;
@@ -170,6 +207,7 @@
             margin-bottom: 10px;
             color: #555;
             font-size: 0.9rem;
+            font-family: 'Alegreya', sans-serif;
         }
 
 .form-section {
@@ -182,11 +220,13 @@
         }
         .section-number {
             color: #D4AF37;
+            font-family: 'Alegreya', sans-serif;
             font-weight: 600;
             font-size: 0.9rem;
         }
         .section-title {
             color: #D4AF37;
+
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -196,12 +236,12 @@
             margin-bottom: 20px;
         }
         .label-number {
-        
+            font-family: 'Alegreya', sans-serif;
             font-weight: 500;
             font-size: 0.85rem;
         }
         .form-label {
-          
+            font-family: 'Alegreya', sans-serif;
             font-weight: 500;
             margin-bottom: 8px;
         }
