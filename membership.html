@@ -16,8 +16,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
           <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
-        <div class="logo-wrapper me-2"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text "></div>
-       <span>Ilorin Golf Club</span> 
+        <div class=" me-2"><img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class=" "></div>
+       <span class="brand-name">Ilorin Golf Club</span> 
       </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -105,7 +105,12 @@
 
                         <div class="mb-3">
                             <label for="maritalStatus" class="form-label">6. Marital Status</label>
-                            <input type="text" class="form-control" id="maritalStatus">
+                            
+                            <select class="form-select" id="players">
+                        <option value="" selected>Select Marital Status</option>
+                        <option value="1">Single</option>
+                        <option value="2">Married</option>
+                    </select>
                         </div>
 
                         <div class="mb-3">
@@ -134,7 +139,7 @@
                             
         <!-- Agreement Section -->
         <div class="mb-4">
-            <div class="section-number mb-2">16. Agreement</div>
+            <div class="section-title pt-2">10. Agreement</div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="agreement" required>
                 <label class="form-check-label" for="agreement">
@@ -181,7 +186,7 @@
     
                         </div>
 
-                        <button type="submit" class="btn w-100" style="background-color: #D4AF37; color: #fff;">Submit Application</button>
+                        <button type="submit" class="btn w-100" style="background-color: #D4AF37; color: #fff; font-family: 'Alegreya',sans-serif;">Submit Application</button>
                     </form>
                 </div>
             </div>
@@ -248,9 +253,9 @@
             <div class="row">
             
             <div class="col-md-3 mb-4">
-                  <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
-        <div class="logo-wrapper me-2"><img src="assets/Ilorin_Golf_Club_Icon.svg" alt="Ilorin Golf Club" class="logo-text "></div>
-       <span>Ilorin Golf Club</span> 
+                <a class="navbar-brand d-flex align-items-center fw-bold text-dark pt-0" href="#">
+        <div class="me-2"><img src="assets/Ilorin Golf Club Logo.svg" loading="lazy" alt="Ilorin Golf Club"></div>
+       <span class="fw-bold">Ilorin Golf Club</span> 
       </a>
                 <p>The heart of golf in Kwara State, blending a proud heritage with modern facilities.</p>
                 <div>
@@ -262,25 +267,25 @@
 
             <div class="col-md-3 mb-4">
                 <h5 class="fw-bold">Quick Links</h5>
-                <ul class="list-unstyled">
-                <li><a href="#" class="text-dark text-decoration-none">The Course</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">The Club</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Events</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Membership</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Book a Tee Time</a></li>
+                <ul class="list-unstyled" style="font-family: 'Alegreya', sans-serif;">
+                <li><a href="course.html" class="text-dark text-decoration-none">The Course</a></li>
+                <li><a href="club.html" class="text-dark text-decoration-none">The Club</a></li>
+                <li><a href="events.html" class="text-dark text-decoration-none">Events</a></li>
+                <li><a href="membership.html" class="text-dark text-decoration-none">Membership</a></li>
+                <li><a href="TeeTime.html" class="text-dark text-decoration-none">Book a Tee Time</a></li>
                 </ul>
             </div>
 
             <div class="col-md-3 mb-4">
                 <h5 class="fw-bold">Explore</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled"  style="font-family: 'Alegreya', sans-serif;">
                 <li><a href="#" class="text-dark text-decoration-none">Dining</a></li>
                 <li><a href="#" class="text-dark text-decoration-none">Pro Shop</a></li>
                 <li><a href="gallery.html" class="text-dark text-decoration-none">Gallery</a></li>
                 </ul>
             </div>
 
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4" style="font-family: 'Alegreya', sans-serif;">
                 <h5 class="fw-bold">Contact Us</h5>
                 <p>No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG</p>
                 <p>Email: <a href="mailto:info@iloringolf.org" class="text-dark text-decoration-none">info@iloringolf.org</a></p>
@@ -288,7 +293,7 @@
             </div>
             </div>
 
-            <div class="text-center mt-4 border-top pt-3">
+            <div class="text-center mt-4 border-top pt-3" style="font-family: 'Alegreya', sans-serif;">
             <p class="mb-0">&copy; 2025 Ilorin Golf Club. All Rights Reserved.</p>
             </div>
         </div>

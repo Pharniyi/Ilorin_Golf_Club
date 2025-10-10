@@ -127,8 +127,8 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 .competition-card h3 {
-    font-family: 'Alegreya', sans-serif; 
-    font-size: 1.25rem;
+    font-family: 'raleway', sans-serif; 
+    font-size: 1.17rem;
     font-weight: 600;
     margin-bottom: 20px;
     color: #333;
@@ -146,7 +146,7 @@
     font-family: 'raleway',sans-serif;
   }
 
-  p{
+  p,a,th,td{
     font-family: 'Alegreya', sans-serif;
   }
         /*.pagination-dots {
@@ -165,3 +165,25 @@
         .pagination-dots span.active {
             background-color: #ffc107;
         }*/
+
+/* Default: show mobile, hide desktop */
+.Golf-course-desktop {
+  display: none;
+}
+.Golf-course-mobile {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* From medium screens and above (≥768px), show desktop image */
+@media (min-width: 768px) {
+  .Golf-course-desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .Golf-course-mobile {
+    display: none;
+  }
+}

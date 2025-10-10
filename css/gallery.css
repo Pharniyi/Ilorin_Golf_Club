@@ -102,6 +102,14 @@
     text-align: center;
 }
 
+.h1, h2,h3,h4,h5,h6{
+    font-family: 'raleway',sans-serif;
+  }
+
+  p,a{
+    font-family: 'Alegreya', sans-serif;
+  }
+
 .gallery-container {
             max-width: 1200px;
             margin: 0 auto;

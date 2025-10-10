@@ -101,6 +101,14 @@
     text-align: center;
 }
 
+.h1, h2,h3,h4,h5,h6{
+    font-family: 'raleway',sans-serif;
+  }
+
+  p,a,th,td{
+    font-family: 'Alegreya', sans-serif;
+  }
+
 .reservation-container {
             max-width: 650px;
             margin: 0 auto;
@@ -142,7 +150,6 @@
 }
         .btn-submit {
           font-family: 'Alegreya', sans-serif;
-            background-color: #d4a574;
             border: none;
             color: white;
             font-weight: 600;
