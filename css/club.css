@@ -206,6 +206,18 @@
     font-family: 'raleway',sans-serif;
   }
 
-  p,a {
+  p,a ,blockquote{
     font-family: 'Alegreya', sans-serif;
   }
+
+  .member-text{
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 767.98px) {
+  /* Make each carousel item only show one card per slide on mobile */
+  .carousel-item .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

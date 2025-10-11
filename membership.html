@@ -15,19 +15,18 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
-          <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
-        <div class=" me-2"><img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class=" "></div>
-       <span class="brand-name">Ilorin Golf Club</span> 
-      </a>
+          <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="index.html">
+          <div class=" me-2">
+              <img src="assets/Ilorin Golf Club Logo.svg" alt="Ilorin Golf Club" class=" ">
+          </div>
+        <span class="brand-name">Ilorin Golf Club</span> 
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link text-dark fw-semibold" href="index.html">Home</a>
-            </li></li>
             <li class="nav-item">
                 <a class="nav-link active fw-semibold" href="course.html">The Course</a>
             </li>
@@ -142,7 +141,7 @@
             <div class="section-title pt-2">10. Agreement</div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="agreement" required>
-                <label class="form-check-label" for="agreement">
+                <label class="form-check-label" for="agreement" style="font-family: 'Alegreya', sans-serif;">
                     By clicking, you hereby adhere to all the rules.
                 </label>
             </div>
@@ -186,7 +185,9 @@
     
                         </div>
 
-                        <button type="submit" class="btn w-100" style="background-color: #D4AF37; color: #fff; font-family: 'Alegreya',sans-serif;">Submit Application</button>
+                        <button type="submit" class="btn w-100" style="background-color: #D4AF37; color: #fff; font-family: 'Alegreya',sans-serif;">
+                            Submit Application</button>
+
                     </form>
                 </div>
             </div>
@@ -289,7 +290,7 @@
                 <h5 class="fw-bold">Contact Us</h5>
                 <p>No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG</p>
                 <p>Email: <a href="mailto:info@iloringolf.org" class="text-dark text-decoration-none">info@iloringolf.org</a></p>
-                <p>Phone: +234-XXX-XXX-XXXX</p>
+                <p>Phone: +234-912-002-0704</p>
             </div>
             </div>
 
@@ -299,6 +300,39 @@
         </div>
     </footer>
 
+
+    <!-- Alert (hidden initially) -->
+<div id="successAlert"
+  class="alert alert-secondary alert-dismissible fade position-fixed top-0 end-0 m-3 shadow"
+  role="alert" style="display: none; max-width: 320px;">
+  <strong>Application Sent!</strong><br>
+  We have received your membership application. We will review it and get back to you soon.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("applicationForm");
+  const alertBox = document.getElementById("successAlert");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop form reload
+
+    // Show the alert
+    alertBox.style.display = "block";
+    setTimeout(() => {
+      alertBox.classList.add("show");
+    }, 100); // small delay for animation
+
+    // Hide automatically after 5 seconds
+    setTimeout(() => {
+      alertBox.classList.remove("show");
+      setTimeout(() => {
+        alertBox.style.display = "none";
+      }, 300);
+    }, 5000);
+  });
+});
+</script>
 </body>
 </html>
