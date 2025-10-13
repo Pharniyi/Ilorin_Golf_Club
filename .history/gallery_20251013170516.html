@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
+      <div
+        class="container-fluid px-4 d-flex justify-content-between align-items-center"
+      >
+        <a
+          class="navbar-brand d-flex align-items-center fw-bold text-dark"
+          href="index.html"
+        >
+          <div class="me-2">
+            <img
+              src="assets/Ilorin Golf Club Logo.svg"
+              alt="Ilorin Golf Club"
+              class=" "
+            />
+          </div>
+          <span class="brand-name">Ilorin Golf Club</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="course.html"
+                >The Course</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="club.html"
+                >The Club</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="events.html"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="membership.html"
+                >Membership</a
+              >
+            </li>
+          </ul>
+          <div class="d-lg-none d-block pb-2">
+            <a
+              href="TeeTime.html"
+              class="btn btn-sm fw-bold"
+              style="
+                background-color: #d4af37;
+                border-color: #d4af37;
+                color: #fff;
+              "
+              >Book a Tee Time</a
+            >
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+          <a
+            href="TeeTime.html"
+            class="btn btn-sm fw-bold"
+            style="
+              background-color: #d4af37;
+              border-color: #d4af37;
+              color: #fff;
+            "
+          >
+            Book a Tee Time</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img
+        src="assets/thecourse-bg.jpg"
+        alt="Golfers at Ilorin Golf Club"
+        class="desktop-bg"
+      />
+
+      <img
+        src="assets/thecourse-bg-mobile.png"
+        alt="Golfers at Ilorin Golf Club "
+        class="mobile-bg"
+      />
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="display-4 fw-bold">Gallery</h1>
+          <p class="lead mb-4">
+            A glimpse into the beauty and community of Ilorin Golf Club.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Gallery Section-->
+    <div class="container py-5 d-none d-md-block">
+      <div class="row g-4">
+        <!-- Row 1 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg1.png"
+              class="card-img-top"
+              alt="Golfers on the course"
+            />
+
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Ball</p>
+              <p class="text-center card-p">
+                A moment of anticipation. A perfectly struck putt rolls just
+                inches from the cup on a pristine green.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg2.png"
+              class="card-img-top"
+              alt="Golfers shaking hands"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Bunker</p>
+              <p class="text-center card-p">
+                A strategically placed bunker challenges golfers, its white sand
+                contrasting beautifully with the lush green fairway.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg3.png"
+              class="card-img-top"
+              alt="Golfer teeing off"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Players</p>
+              <p class="text-center card-p">
+                The spirit of sportsmanship is captured as two members share a
+                handshake and a smile after a competitive round.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <!-- Row 2 -->
+        <div class="c">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg1.png"
+              class="card-img-top"
+              alt="Golfers practicing"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Bunkers</p>
+              <p class="text-center card-p">
+                A strategically placed bunker challenges golfers, its white sand
+                contrasting beautifully with the lush green fairway.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="c">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg2.png"
+              class="card-img-top"
+              alt="Golf course view"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Players</p>
+              <p class="text-center card-p">
+                The spirit of sportsmanship is captured as two members share a
+                handshake and a smile after a competitive round.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="c">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg3.png"
+              class="card-img-top"
+              alt="Golfers meeting"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Ball</p>
+              <p class="text-center card-p">
+                A moment of anticipation. A perfectly struck putt rolls just
+                inches from the cup on a pristine green.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <!-- Row 3 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg1.png"
+              class="card-img-top"
+              alt="Golf training"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Players</p>
+              <p class="text-center card-p">
+                The spirit of sportsmanship is captured as two members share a
+                handshake and a smile after a competitive round.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg2.png"
+              class="card-img-top"
+              alt="Golf flag on course"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Ball</p>
+              <p class="text-center card-p">
+                A moment of anticipation. A perfectly struck putt rolls just
+                inches from the cup on a pristine green.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="card h-100"
+            style="transition: transform 0.3s; cursor: pointer"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <img
+              src="assets/galleryimg3.png"
+              class="card-img-top"
+              alt="Golfers discussion"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Golf Bunkers</p>
+              <p class="text-center card-p">
+                A strategically placed bunker challenges golfers, its white sand
+                contrasting beautifully with the lush green fairway.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="galleryCarousel"
+      class="carousel slide pt-5 d-block d-md-none"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+      data-bs-pause="hover"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card shadow-sm text-center mx-auto" style="width: 90%">
+            <img
+              src="assets/galleryimg1.png"
+              class="card-img-top"
+              alt="Golfers on the course"
+            />
+            <div class="card-body">
+              <p class="fw-bold mb-1">Golf Ball</p>
+              <p class="card-p mb-0">
+                A moment of anticipation. A perfectly struck putt rolls just
+                inches from the cup on a pristine green.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card shadow-sm text-center mx-auto" style="width: 90%">
+            <img
+              src="assets/galleryimg2.png"
+              class="card-img-top"
+              alt="Golfers shaking hands"
+            />
+            <div class="card-body">
+              <p class="fw-bold mb-1">Golf Bunker</p>
+              <p class="card-p mb-0">
+                A strategically placed bunker challenges golfers, its white sand
+                contrasting beautifully with the lush green fairway.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card shadow-sm text-center mx-auto" style="width: 90%">
+            <img
+              src="assets/galleryimg3.png"
+              class="card-img-top"
+              alt="Golfer teeing off"
+            />
+            <div class="card-body">
+              <p class="fw-bold mb-1">Golf Players</p>
+              <p class="card-p mb-0">
+                The spirit of sportsmanship is captured as two members share a
+                handshake and a smile after a competitive round.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls 
+  <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark pt-5 pb-3">
+      <div class="container-fluid px-4">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <a
+              class="navbar-brand d-flex align-items-center fw-bold text-dark pt-0"
+              href="#"
+            >
+              <div class="me-2">
+                <img
+                  src="assets/Ilorin Golf Club Logo.svg"
+                  loading="lazy"
+                  alt="Ilorin Golf Club"
+                />
+              </div>
+              <span class="fw-bold">Ilorin Golf Club</span>
+            </a>
+            <p>
+              The heart of golf in Kwara State, blending a proud heritage with
+              modern facilities.
+            </p>
+            <div>
+              <a href="#" class="text-dark me-3"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook-icon lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  /></svg
+              ></a>
+              <a href="#" class="text-dark me-3"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-twitter-icon lucide-twitter"
+                >
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                  /></svg
+              ></a>
+              <a href="#" class="text-dark"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram-icon lucide-instagram"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul
+              class="list-unstyled"
+              style="font-family: 'Alegreya', sans-serif"
+            >
+              <li>
+                <a href="course.html" class="text-dark text-decoration-none"
+                  >The Course</a
+                >
+              </li>
+              <li>
+                <a href="club.html" class="text-dark text-decoration-none"
+                  >The Club</a
+                >
+              </li>
+              <li>
+                <a href="events.html" class="text-dark text-decoration-none"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a href="membership.html" class="text-dark text-decoration-none"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a href="TeeTime.html" class="text-dark text-decoration-none"
+                  >Book a Tee Time</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">Explore</h5>
+            <ul
+              class="list-unstyled"
+              style="font-family: 'Alegreya', sans-serif"
+            >
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Dining</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Pro Shop</a>
+              </li>
+              <li>
+                <a href="gallery.html" class="text-dark text-decoration-none"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-md-3 mb-4"
+            style="font-family: 'Alegreya', sans-serif"
+          >
+            <h5 class="fw-bold">Contact Us</h5>
+            <p>
+              No. 2 Commissioner's Lodge Way, G.R.A., Ilorin, Kwara State, NG
+            </p>
+            <p>
+              Email:
+              <a
+                href="mailto:info@iloringolf.org"
+                class="text-dark text-decoration-none"
+                >info@iloringolf.org</a
+              >
+            </p>
+            <p>Phone: +234-912-002-0704</p>
+          </div>
+        </div>
+
+        <div
+          class="text-center mt-4 border-top pt-3"
+          style="font-family: 'Alegreya', sans-serif"
+        >
+          <p class="mb-0">&copy; 2025 Ilorin Golf Club. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

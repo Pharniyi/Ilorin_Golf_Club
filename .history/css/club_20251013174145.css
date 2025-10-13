@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
+.body{
+    margin: 0;
+    
+}
+
+.logo-wrapper {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  width: 70%;
+  height: auto;
+  padding: 4px;
+}
+
+.brand-name {
+  font-size: clamp(14px, 2vw, 20px); 
+  font-weight: 700;
+  color: #000;
+}
+
+.hero-content h1{
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-content p{
+  font-family: 'Alegreya', sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    height: 600px;
+    color: white;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Default: show mobile, hide desktop */
+.desktop-bg {
+  display: none;
+}
+.mobile-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* From medium screens and above (≥768px), show desktop image */
+@media (min-width: 768px) {
+  .desktop-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .mobile-bg {
+    display: none;
+  }
+}
+
+.hero-section h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.hero-section p {
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  line-height: 1.4;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: white !important; /* Keeps background white */
+    color: black !important; /* Keeps text readable */
+  }
+
+  .accordion {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+  }
+
+  /* === Accordion Button Styling === */
+  .accordion-button {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #222;
+    padding: 1rem 1.25rem;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #f9f9f9;
+    color: #006400;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .accordion-button:hover {
+    background-color: #f2f2f2;
+    color: #004d00;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+
+  /* === Accordion Body Styling === */
+  .accordion-body {
+    font-size: 15px;
+    font-family: 'Alegreya', sans-serif;
+    line-height: 1.7;
+    background-color: #fff;
+    padding: 1rem 1.25rem;
+  }
+
+  .accordion-body ul li {
+    font-size: 15px;
+    font-family: 'Alegreya', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  /* === Accordion Item Border Separation === */
+  .accordion-item {
+    border-bottom: none !important;
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+
+  /* === Responsive Adjustments === */
+  @media (max-width: 992px) {
+    .accordion-button {
+      font-size: 16px;
+      font-family: 'Alegreya', sans-serif;
+      padding: 0.9rem 1rem;
+    }
+
+    .accordion-body,
+    .accordion-body ul li {
+      font-size: 14px;
+      font-family: 'Alegreya', sans-serif;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .accordion-button {
+      font-size: 15px;
+      font-family: 'Alegreya', sans-serif;
+      padding: 0.8rem 0.9rem;
+    }
+
+    .accordion-body,
+    .accordion-body ul li {
+      font-size: 13px;
+      font-family: 'Alegreya', sans-serif;
+    }
+  }
+
+  .h1, h2,h3,h4,h5,h6{
+    font-family: 'raleway',sans-serif;
+  }
+
+  p,a ,blockquote{
+    font-family: 'Alegreya', sans-serif;
+  }
+
+  .member-text{
+    font-size: 1.1rem;
+  }
+
+/*@media (max-width: 767.98px) {
+  /* Make each carousel item only show one card per slide on mobile 
+  .carousel-item .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}*/
+.card-body{
+  padding-top:0.75rem !important;
+}
+
+.card-image-top{
+  border-top: 0.375rem;
+  border-bottom: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
