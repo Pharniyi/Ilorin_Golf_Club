@@ -181,4 +181,29 @@
 }
 */
 
+/* Make sure images fit properly */
+.desktop-bg, .mobile-bg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+
+/* Optional blur while loading */
+.blur-load {
+  filter: blur(10px);
+}
+
+.blur-load.loaded {
+  filter: blur(0);
+  transition: filter 0.7s ease;
+}
+
+/* Optional: hide mobile or desktop images per screen size */
+@media (max-width: 768px) {
+  .desktop-bg { display: none; }
+}
+@media (min-width: 769px) {
+  .mobile-bg { display: none; }
+}
 

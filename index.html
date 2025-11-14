@@ -29,12 +29,13 @@
     
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="club.html">Club</a></li>
           <li class="nav-item">
-            <a class="nav-link text-dark fw-semibold" href="course.html">The Course</a>
+            <a class="nav-link text-dark fw-semibold" href="course.html">Course</a>
           </li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="club.html">The Club</a></li>
           <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="events.html">Events</a></li>
           <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="gallery.html">Gallery</a></li>
         </ul>
         <div class="d-lg-none d-block pb-2">
             <a href="TeeTime.html" class="btn btn-sm fw-bold" style="background-color: #D4AF37; border-color: #D4AF37; color: #fff;">Book a Tee Time</a>
@@ -51,25 +52,86 @@
   <section class="hero-section overflow-hidden">
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner position-relative" style="isolation: isolate;">
-        <div class="position-absolute shadow-overlay"></div>
-        <div class="carousel-item active">
-          <img src="assets/homebg.jpg" 
-        alt="Golfers at Ilorin Golf Club" loading="lazy" style="background-image: url('https://via.placeholder.com/10x5?text-blur');" class="desktop-bg lazy-img">
+  <div class="carousel-inner position-relative" style="isolation: isolate;">
+    <div class="position-absolute shadow-overlay"></div>
 
-        <img src="assets/home-bg-mobile.jpg" 
-        alt="Golfers at Ilorin Golf Club " loading="lazy" style="background-image: url('https://via.placeholder.com/10x5?text-blur');" class="mobile-bg lazy-img">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/homebg2.jpg" loading="lazy" style="background-image: url('https://via.placeholder.com/10x5?text-blur');" class=" desktop-bg lazy-img" alt="">
-          <img src="assets/home-bg-mobile2.jpg" loading="lazy" style="background-image: url('https://via.placeholder.com/10x5?text-blur');" class=" mobile-bg lazy-img" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/homebg3.1.jpg" loading="lazy" style="background-image: url('https://via.placeholder.com/10x5?text-blur');" class=" desktop-bg lazy-img" alt="...">
-          <img src="assets/home-bg-mobile3.jpg" loading="lazy" style="background-image: url('https://via.placeholder.com/10x5?text-blur');" class=" mobile-bg lazy-img" alt="">
-        </div>
-      </div>
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img 
+        data-src="assets/homebg1.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Golfers at Ilorin Golf Club" 
+        class="desktop-bg lazy-img blur-load object-position-center">
+      
+      <img 
+        data-src="assets/home-bg-mobile.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Golfers at Ilorin Golf Club Mobile" 
+        class="mobile-bg lazy-img blur-load">
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img 
+        data-src="assets/homebg2.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club 2" 
+        class="desktop-bg lazy-img blur-load">
+      
+      <img 
+        data-src="assets/home-bg-mobile2.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club Mobile 2" 
+        class="mobile-bg lazy-img blur-load">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img 
+        data-src="assets/homebg3.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club 3" 
+        class="desktop-bg lazy-img blur-load">
+      
+      <img 
+        data-src="assets/home-bg-mobile3.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club Mobile 3" 
+        class="mobile-bg lazy-img blur-load">
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <img 
+        data-src="assets/homebg4.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club 3" 
+        class="desktop-bg lazy-img blur-load">
+      
+      <img 
+        data-src="assets/home-bg-mobile3.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club Mobile 3" 
+        class="mobile-bg lazy-img blur-load">
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item">
+      <img 
+        data-src="assets/homebg5.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club 3" 
+        class="desktop-bg lazy-img blur-load">
+      
+      <img 
+        data-src="assets/home-bg-mobile3.jpg"
+        src="https://via.placeholder.com/10x5?text=Loading..." 
+        alt="Ilorin Golf Club Mobile 3" 
+        class="mobile-bg lazy-img blur-load">
+    </div>
+  </div>
+</div>
+
 
     <!--<img src="assets/homebg.jpg" 
      alt="Golfers at Ilorin Golf Club" class="desktop-bg">
@@ -380,7 +442,26 @@
   </footer>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyImages = document.querySelectorAll(".lazy-img");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src; // swap real image
+        img.onload = () => img.classList.add("loaded"); // remove blur
+        obs.unobserve(img);
+      }
+    });
+  }, { rootMargin: "100px" }); // preload before fully in view
+
+  lazyImages.forEach(img => observer.observe(img));
+});
+</script>
 
 </body>
 
